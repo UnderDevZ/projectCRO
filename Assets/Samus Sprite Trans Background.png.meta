@@ -1,0 +1,861 @@
+fileFormatVersion: 2
+guid: c7aefef2cd4514f47be755b1142c020e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1063574306579195493
+    second: Samus Sprite Trans Background_0
+  - first:
+      213: 7615693670462270158
+    second: Samus Sprite Trans Background_1
+  - first:
+      213: -3807942616881645162
+    second: Samus Sprite Trans Background_2
+  - first:
+      213: 6422114344176709270
+    second: Samus Sprite Trans Background_3
+  - first:
+      213: -303156008063995135
+    second: Samus Sprite Trans Background_4
+  - first:
+      213: -7706210143076909714
+    second: Samus Sprite Trans Background_5
+  - first:
+      213: 3168607140356956977
+    second: Samus Sprite Trans Background_6
+  - first:
+      213: 1087373527761833365
+    second: Samus Sprite Trans Background_7
+  - first:
+      213: -7197484134187844570
+    second: Samus Sprite Trans Background_8
+  - first:
+      213: 7968437211176321108
+    second: Samus Sprite Trans Background_9
+  - first:
+      213: 9167811651583076903
+    second: Samus Sprite Trans Background_10
+  - first:
+      213: -956328610388733756
+    second: Samus Sprite Trans Background_11
+  - first:
+      213: -1520208593388614419
+    second: Samus Sprite Trans Background_12
+  - first:
+      213: 5795096928965763834
+    second: Samus Sprite Trans Background_13
+  - first:
+      213: 4120819744268449773
+    second: Samus Sprite Trans Background_14
+  - first:
+      213: 2369221086020531436
+    second: Samus Sprite Trans Background_15
+  - first:
+      213: -5028011429071491856
+    second: Samus Sprite Trans Background_16
+  - first:
+      213: -6723527420626590937
+    second: Samus Sprite Trans Background_17
+  - first:
+      213: -8857487381217845491
+    second: Samus Sprite Trans Background_18
+  - first:
+      213: -3053172326774188698
+    second: Samus Sprite Trans Background_19
+  - first:
+      213: 7851567307887823106
+    second: Samus Sprite Trans Background_20
+  - first:
+      213: -3328413804591554898
+    second: Samus Sprite Trans Background_21
+  - first:
+      213: 4525278037421956912
+    second: Samus Sprite Trans Background_22
+  - first:
+      213: 7707142936597409153
+    second: Samus Sprite Trans Background_23
+  - first:
+      213: 6817134572155036448
+    second: Samus Sprite Trans Background_24
+  - first:
+      213: 2059866293273139920
+    second: Samus Sprite Trans Background_25
+  - first:
+      213: -3898041434088334201
+    second: Samus Sprite Trans Background_26
+  - first:
+      213: 867145348580325346
+    second: Samus Sprite Trans Background_27
+  - first:
+      213: -8947288700778832414
+    second: Samus Sprite Trans Background_28
+  - first:
+      213: -3832025767008144228
+    second: Samus Sprite Trans Background_29
+  - first:
+      213: -4673774205270856296
+    second: Samus Sprite Trans Background_30
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3925
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b995d10adcc6d31f0800000000000000
+      internalID: -1063574306579195493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 3925
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca281a2b0160b960800000000000000
+      internalID: 7615693670462270158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 3924
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699b2b38d58772bc0800000000000000
+      internalID: -3807942616881645162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3925
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ee79f58feef1950800000000000000
+      internalID: 6422114344176709270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 3926
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103f1d38739facbf0800000000000000
+      internalID: -303156008063995135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 3926
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d736144ba0e0590800000000000000
+      internalID: -7706210143076909714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_6
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3925
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1332eb9f76729fb20800000000000000
+      internalID: 3168607140356956977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 3925
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d486c5670271f00800000000000000
+      internalID: 1087373527761833365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_8
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 3926
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c393950566d1c90800000000000000
+      internalID: -7197484134187844570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3926
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4504b2bcc63959e60800000000000000
+      internalID: 7968437211176321108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_10
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 4587
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 6, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aeb4cbf1c9a3f70800000000000000
+      internalID: 9167811651583076903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 4588
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c09c3912307ab2f0800000000000000
+      internalID: -956328610388733756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_12
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 4587
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec4396b65227eae0800000000000000
+      internalID: -1520208593388614419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_13
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3040
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af226f104f15c6050800000000000000
+      internalID: 5795096928965763834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 3075
+        width: 9
+        height: 2
+      alignment: 9
+      pivot: {x: -0.16486779, y: 1.5997838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7798079b7103930800000000000000
+      internalID: 4120819744268449773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_15
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 3040
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce47e9a660a21e020800000000000000
+      internalID: 2369221086020531436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3040
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fce69bae3ae83ab0800000000000000
+      internalID: -5028011429071491856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_17
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3040
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72324f70f6b31b2a0800000000000000
+      internalID: -6723527420626590937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_18
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 3039
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f5100e722e31580800000000000000
+      internalID: -8857487381217845491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3041
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6655298f1f3f0a5d0800000000000000
+      internalID: -3053172326774188698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_20
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 3040
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20949bcfdde56fc60800000000000000
+      internalID: 7851567307887823106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_21
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 3042
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae50d787491fc1d0800000000000000
+      internalID: -3328413804591554898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_22
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 3039
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f996a26640dce30800000000000000
+      internalID: 4525278037421956912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_23
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3831
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dac09aaa545fa60800000000000000
+      internalID: 7707142936597409153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_24
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3830
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023e55f46c35b9e50800000000000000
+      internalID: 6817134572155036448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 3830
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da9857ea7d169c10800000000000000
+      internalID: 2059866293273139920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_26
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3830
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1969e7ff57e9c0800000000000000
+      internalID: -3898041434088334201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_27
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 3831
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e733c6a918b80c00800000000000000
+      internalID: 867145348580325346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_28
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 3829
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed1637d458d4d380800000000000000
+      internalID: -8947288700778832414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_29
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3829
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94f55b2ed8e1dac0800000000000000
+      internalID: -3832025767008144228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samus Sprite Trans Background_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 4086
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d627e7f1b632fb0800000000000000
+      internalID: -4673774205270856296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
