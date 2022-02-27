@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
 
         }
 
-        Invoke("SelfDestruct", 20);
+        Invoke("SelfDestruct", 10);
 
     }
 

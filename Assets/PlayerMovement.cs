@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     public Shooter shooter;
     public Bullet bullet;
     public GameObject point;
+
+    public ParticleSystem particle;
+
     
 
 
@@ -63,9 +66,19 @@ public class PlayerMovement : MonoBehaviour
         
         }
 
-        
-      
 
+
+        if (Health <= 0) 
+        
+        {
+
+            particle.Play();
+            moveSpeed = 0f;
+            jumpForce = 0f;
+            sprite.enabled = false;
+
+        
+        }
 
 
 

@@ -8,7 +8,8 @@ public class Shooter : MonoBehaviour
     public GameObject bullet;
     public Transform shootingPoint;
     public bool ShootLeft;
-
+    public AudioClip clip;
+    public AudioSource source; 
 
 
 
@@ -17,8 +18,12 @@ public class Shooter : MonoBehaviour
 
     public void Shoot() 
     {
+        
         GameObject shotitem = Instantiate(bullet, shootingPoint);
         shotitem.transform.parent = null;
+
+        source.PlayOneShot(clip);
+       
 
         if (ShootLeft == true)
         {
@@ -33,6 +38,7 @@ public class Shooter : MonoBehaviour
             shootingPoint.transform.localPosition = new Vector3(shootingPoint.transform.localPosition.x, 0f, 0f);
 
         }
+       
 
         
 
