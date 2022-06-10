@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject point;
 
     public ParticleSystem particle;
+    
 
     
 
@@ -72,10 +73,13 @@ public class PlayerMovement : MonoBehaviour
         
         {
 
-            particle.Play();
+            particle.Emit(100);
             moveSpeed = 0f;
             jumpForce = 0f;
             sprite.enabled = false;
+            
+            
+            
 
         
         }
@@ -183,7 +187,7 @@ public class PlayerMovement : MonoBehaviour
             shooter.ShootLeft = true;
         
         }
-        
+       
     }
 
    

@@ -1,0 +1,3 @@
+rep "ProjectCRO@GearPlay@cloud"
+  path "/"
+    smartbranch "/main"
