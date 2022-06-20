@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     public float speed;
     public bool reverse;
     public GameObject self;
-
+    public ParticleSystem explosion; 
     
 
 
@@ -27,6 +27,7 @@ public class Bullet : MonoBehaviour
         }
 
         Invoke("SelfDestruct", 10);
+        explosion.Emit(100);
 
     }
 
@@ -35,22 +36,36 @@ public class Bullet : MonoBehaviour
         self.gameObject.SetActive(false);
     
     }
+
+    
     
 
-     void OnTriggerEnter2D(Collider2D collision)
+     public void OnCollisionStay2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-            return;
-
-
-
-        // if (collision.GetComponent<ShootingAction>())
-        //     collision.GetComponent<ShootingAction>().Action();
-
-
-        if (collision.tag == "Enemy" ) 
+        if (collision.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            SelfDestruct();
+            return;
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+       else if (collision.CompareTag("Enemy"))
+        {
+            SelfDestruct();
+            explosion.Emit(100);
+           
 
 
         }

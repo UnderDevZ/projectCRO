@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject point;
 
     public ParticleSystem particle;
+    public static float CoinCount;
     
 
     
@@ -57,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+       
         isGrounded = Physics2D.OverlapCircle(feetpos.position, checkRadius, whatIsGround); //Remember, Physics2D.OverlapCircle
 
         if (isGrounded == false) 
@@ -87,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        if (joystick.Horizontal > 0.2f ) //Right Fast
+        if ((joystick.Horizontal > 0.2f ) & (isGrounded == true)) //Right Fast
         {
 
             bullet.reverse = false;
@@ -107,7 +109,7 @@ public class PlayerMovement : MonoBehaviour
       
 
 
-        else if (joystick.Horizontal >= 0.1f) //Right Normal
+        else if ((joystick.Horizontal >= 0.1f) &(isGrounded == true)) //Right normal
         {
 
             bullet.reverse = false;
@@ -131,7 +133,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        else if (joystick.Horizontal <= -0.2f) //Left Fast
+        else if ((joystick.Horizontal <= -0.2f) &(isGrounded == true)) //Left normal
         {
 
             rb.velocity = new Vector2(-moveSpeed * 2, rb.velocity.y);
@@ -143,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        else if (joystick.Horizontal <= -0.1f) //Left Normal
+        else if ((joystick.Horizontal <= -0.1f) &(isGrounded == true)) //Left right
         {
 
             rb.velocity = new Vector2(-moveSpeed, rb.velocity.y);
@@ -180,6 +182,9 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        
+        
+
 
 
         void shootLeft() 
@@ -187,14 +192,24 @@ public class PlayerMovement : MonoBehaviour
             shooter.ShootLeft = true;
         
         }
-       
+         
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.gameObject.CompareTag("Coin"))
+
+        {
+            CoinCount = CoinCount + 1; 
+            Destroy(other.gameObject);
+        }
+
     }
 
-   
 
-  
 
-    
+
+
 
 
 

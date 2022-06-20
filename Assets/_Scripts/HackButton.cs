@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 public class HackButton : MonoBehaviour
 {
 
-    void Puzzle1() 
+    public void Puzzle1() 
     {
-        SceneManager.LoadScene("Puzzle1");
+        SceneManager.LoadScene("Puzzle1st");
     
+    }
+    public void NextLevel() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

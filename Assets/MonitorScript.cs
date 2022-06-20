@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
+
 
 
 public class MonitorScript : MonoBehaviour
 {
     public AudioSource MonitorSound;
-    public GameObject HackProceed; 
+    
+    public GameObject HackScreen;
+    public Canvas Hack; 
 
-
-    void MonitorTouch() 
+   public void MonitorTouch() 
     {
         MonitorSound.Play();
-        HackProceed.SetActive(true); 
+       
+        HackScreen.SetActive(true);
+
+        Hack.enabled = true; 
     
     }
      void OnTriggerEnter2D(Collider2D Player)
@@ -20,9 +27,12 @@ public class MonitorScript : MonoBehaviour
         if (Player.CompareTag("Player"))
           
         {
+
+            
+            MonitorTouch();
             Debug.Log("Player Is Hacking");
 
-        
+
         }
         
         }
