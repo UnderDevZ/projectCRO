@@ -8,14 +8,16 @@ public class EnemyScript : MonoBehaviour
 
     public int EnemyHealth;
     public SpriteRenderer sprite;
+
+    public Animator FoxAnim; 
+
+
     
-
-
-
     public void Death() 
     {
 
         gameObject.SetActive(false);
+       
     }
     public void TurnRed() 
     {
@@ -32,7 +34,7 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-       
+        FoxAnim = GetComponent<Animator>();
     }
 
 
@@ -45,12 +47,14 @@ public class EnemyScript : MonoBehaviour
         if (EnemyHealth == 0 || EnemyHealth < 0)
 
         {
+            FoxAnim.Play("FoxDeath");
             Invoke("TurnRed", 2);
-            Invoke("Death", 3);
-            
-            
-            }
+            Invoke("Death", 1);
+
+
+
         }
+    }
 
    
      void OnCollisionEnter2D(Collision2D collision)

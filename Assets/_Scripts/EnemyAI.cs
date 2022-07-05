@@ -11,11 +11,13 @@ public class EnemyAI : MonoBehaviour
     public float moveSpeed;
 
     public Rigidbody2D rb;
-    public Animator EnemyAnim; 
-  
+    public Animator EnemyAnim;
+
+    EnemyScript enemyScript;
+    public GameObject Enemy;
     void Start()
     {
-
+        enemyScript = Enemy.GetComponent<EnemyScript>();
         rb = GetComponent<Rigidbody2D>();
         EnemyAnim.Play("FoxIdle");
       
@@ -50,11 +52,11 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.position);
   
 
-        if (distance < agroRange)
+        if ((distance < agroRange) & (enemyScript.EnemyHealth > 0))
         {
             ChasePlayer();
             EnemyAnim.Play("FoxRun");
-
+            
         }
 
         else 
