@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using UnityEngine.UIElements; 
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement; 
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
 
 
     public float jumpForce;
+    private float CoyoteTime = 0.2f;
+    private float CoyoteTimeCounter; 
+
     public LayerMask whatIsGround;
     
     public Shooter shooter;
@@ -35,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
    
     public Canvas RushButtonCanvas;
     public GameObject RushCanvas; 
+
     
 
 
@@ -53,11 +58,15 @@ public class PlayerMovement : MonoBehaviour
     public void Jump() 
     {
 
-        if (isGrounded == true)
+        if (CoyoteTimeCounter > 0f) 
         {
+            
             rb.velocity = Vector2.up * jumpForce;
             anim.Play("PlayerJump");
+            CoyoteTimeCounter = 0f; 
+            
         }
+        
        
     
     }
@@ -66,7 +75,17 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
+        if (isGrounded == true)
+        {
+            CoyoteTimeCounter = CoyoteTime;
 
+        }
+
+        else 
+        {
+            CoyoteTimeCounter = CoyoteTimeCounter - Time.deltaTime; 
+        
+        }
 
 
 
@@ -95,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
             moveSpeed = 0f;
             jumpForce = 0f;
             sprite.enabled = false;
-            
+            Invoke("DeathScreen", 2);
             
             
 
@@ -283,10 +302,10 @@ public void CyberRush()
 
     {
 
-     
 
-        moveSpeed = moveSpeed* 2;
-        jumpForce = jumpForce * 5; 
+
+        moveSpeed = moveSpeed * 100;
+        jumpForce = jumpForce * 50; 
 
         Health = Health * 2;
         
@@ -304,14 +323,15 @@ public void CyberRush()
     {
         moveSpeed = 5f;
         jumpForce = 10f;
-        IsRush = false;
+        
 
-        RushCanvas.SetActive(false); 
-        
-       
+        RushCanvas.SetActive(false);
+        RushButtonCanvas.enabled = false;
 
-        
-        
+
+
+
+
 
 
     }
@@ -320,6 +340,14 @@ public void CyberRush()
         CoinCount = CoinCount - 2; 
         
     
+    }
+
+    void DeathScreen() 
+    {
+        SceneManager.LoadScene("GameOver");
+
+        
+        
     }
 
 
