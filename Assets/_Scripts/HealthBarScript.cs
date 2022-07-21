@@ -22,5 +22,11 @@ public class HealthBarScript : MonoBehaviour
         CurrentHealth = PlayerMovement.Health;
        
         HealthBar.fillAmount = CurrentHealth / MaxHealth;
+
+        if (CurrentHealth > MaxHealth) 
+        {
+            CurrentHealth = MaxHealth; 
+        
+        }
     }
 }

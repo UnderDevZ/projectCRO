@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    public static float Health = 100f; 
+    public static float Health = 100f;
     public float moveSpeed;
     public Rigidbody2D rb;
     public KeyCode Left;
@@ -24,56 +24,80 @@ public class PlayerMovement : MonoBehaviour
 
     public float jumpForce;
     private float CoyoteTime = 0.2f;
-    private float CoyoteTimeCounter; 
+    private float CoyoteTimeCounter;
 
     public LayerMask whatIsGround;
-    
+
     public Shooter shooter;
     public Bullet bullet;
     public GameObject point;
 
     public ParticleSystem particle;
     public static float CoinCount;
-    public bool IsRush;
+    public bool isRush;
 
-   
+
     public Canvas RushButtonCanvas;
-    public GameObject RushCanvas; 
-
-    
+    public GameObject RushCanvas;
 
 
-    
+
+
 
 
 
     void Start()
     {
 
-        
+
         rb = GetComponent<Rigidbody2D>();
+        sprite.flipX = true;
+        bullet.reverse = false;
+
 
     }
 
-    public void Jump() 
+    public void Jump()
     {
 
-        if (CoyoteTimeCounter > 0f) 
+        if (CoyoteTimeCounter > 0f)
         {
-            
+
             rb.velocity = Vector2.up * jumpForce;
             anim.Play("PlayerJump");
-            CoyoteTimeCounter = 0f; 
-            
+            CoyoteTimeCounter = 0f;
+
         }
-        
-       
-    
+
+
+
     }
+
+
 
 
     void Update()
     {
+
+        if (CoinCount > 100) 
+        {
+            CoinCount = 100; 
+        
+        }
+
+        if (CoinCount < 0)
+        {
+            CoinCount = 0; 
+        }
+
+
+        if (isRush == true) 
+        {
+            moveSpeed = 20f;
+            jumpForce = 100f; 
+        
+        }
+
 
         if (isGrounded == true)
         {
@@ -81,33 +105,29 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        else 
+        else
         {
-            CoyoteTimeCounter = CoyoteTimeCounter - Time.deltaTime; 
-        
+            CoyoteTimeCounter = CoyoteTimeCounter - Time.deltaTime;
+
         }
 
 
 
-        if (IsRush == true) 
-        {
-            Invoke("CoinDeplete", 10f);
-
-        }
+       
         isGrounded = Physics2D.OverlapCircle(feetpos.position, checkRadius, whatIsGround); //Remember, Physics2D.OverlapCircle
 
-        if (isGrounded == false) 
+        if (isGrounded == false)
         {
             anim.Play("PlayerJump");
-        
-        
-        
+
+
+
         }
 
 
 
-        if (Health <= 0) 
-        
+        if (Health <= 0)
+
         {
 
             particle.Emit(100);
@@ -115,10 +135,10 @@ public class PlayerMovement : MonoBehaviour
             jumpForce = 0f;
             sprite.enabled = false;
             Invoke("DeathScreen", 2);
-            
-            
 
-        
+
+
+
         }
 
 
@@ -133,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
             sprite.flipX = true;
 
 
-            
+
 
 
 
@@ -175,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-          
+
 
 
 
@@ -194,7 +214,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        else if ((joystick.Horizontal <= -0.2f)& (isGrounded == true))  //Left fast
+        else if ((joystick.Horizontal <= -0.2f) & (isGrounded == true))  //Left fast
         {
 
             rb.velocity = new Vector2(-moveSpeed * 2, rb.velocity.y);
@@ -253,25 +273,25 @@ public class PlayerMovement : MonoBehaviour
             anim.Play("PlayerIdle");
         }
 
-        if (sprite.flipX == true)
+        if (sprite.flipX == true & bullet.reverse == false)
         {
             point.transform.localPosition = new Vector3(1.20f, 0f);
         }
 
-        else if (sprite.flipX == false)
+        else if (sprite.flipX == false & bullet.reverse == true)
         {
             point.transform.localPosition = new Vector3(-1.20f, 0f);
 
         }
 
-        if (CoinCount >=50) 
+        if (CoinCount >= 50)
         {
             RushCanvas.SetActive(true);
             RushButtonCanvas.enabled = true;
             CoinCount = 50;
 
 
-            
+
         }
 
 
@@ -279,12 +299,12 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        void shootLeft() 
+        void shootLeft()
         {
             shooter.ShootLeft = true;
-        
+
         }
-         
+
     }
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -292,38 +312,39 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Coin"))
 
         {
-            CoinCount = CoinCount + 1; 
+            CoinCount = CoinCount + 1;
             Destroy(other.gameObject);
         }
 
     }
 
-public void CyberRush()
+    public void CyberRush()
 
     {
+        isRush = true; 
+        Health = Health + 15;
 
 
 
-        moveSpeed = moveSpeed * 100;
-        jumpForce = jumpForce * 50; 
-
-        Health = Health * 2;
-        
-        
-        
         CoinCount = CoinCount - 50;
-        Invoke("StopRush", 10);
+        Invoke("StopRush", 10f);
 
+
+        RushCanvas.SetActive(false);
+        RushButtonCanvas.enabled = false;
+        
 
 
     }
-    
-    
-    void StopRush()
+
+
+     void StopRush()
     {
+        isRush = false;
         moveSpeed = 5f;
         jumpForce = 10f;
-        
+
+
 
         RushCanvas.SetActive(false);
         RushButtonCanvas.enabled = false;
@@ -337,19 +358,32 @@ public void CyberRush()
     }
     void CoinDeplete()
     {
-        CoinCount = CoinCount - 2; 
-        
-    
+        CoinCount = CoinCount - 2;
+
+
     }
 
-    void DeathScreen() 
+    void DeathScreen()
     {
         SceneManager.LoadScene("GameOver");
+        Invoke("SpriteEnabled", 3.1f);
+        moveSpeed = 5f;
+        jumpForce = 11f;
+        particle.Stop();
+        Health = 100f;
 
-        
-        
+
+
+
     }
 
+    private void SpriteEnabled()
+    {
+        sprite.enabled = true;
+
+    }
+
+   
 
 
 
