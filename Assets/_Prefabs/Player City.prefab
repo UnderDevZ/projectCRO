@@ -5320,7 +5320,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7db36ff38533dc24bb12cb31bba9ca0f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -5355,7 +5355,7 @@ MonoBehaviour:
   bullet: {fileID: 7130750672177469704, guid: d4184cde832292e4084e469a871dadc0, type: 3}
   point: {fileID: 159177436632709781}
   particle: {fileID: 4840105154401001091}
-  IsRush: 0
+  isRush: 0
   RushButtonCanvas: {fileID: 0}
   RushCanvas: {fileID: 0}
 --- !u!95 &159177437028090626

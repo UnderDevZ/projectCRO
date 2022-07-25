@@ -79,23 +79,25 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        if (CoinCount > 100) 
+
+
+        if (CoinCount > 100)
         {
-            CoinCount = 100; 
-        
+            CoinCount = 100;
+
         }
 
         if (CoinCount < 0)
         {
-            CoinCount = 0; 
+            CoinCount = 0;
         }
 
 
-        if (isRush == true) 
+        if (isRush == true)
         {
             moveSpeed = 20f;
-            jumpForce = 100f; 
-        
+            jumpForce = 100f;
+
         }
 
 
@@ -113,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-       
+
         isGrounded = Physics2D.OverlapCircle(feetpos.position, checkRadius, whatIsGround); //Remember, Physics2D.OverlapCircle
 
         if (isGrounded == false)
@@ -299,6 +301,9 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+
+
+
         void shootLeft()
         {
             shooter.ShootLeft = true;
@@ -316,12 +321,19 @@ public class PlayerMovement : MonoBehaviour
             Destroy(other.gameObject);
         }
 
+        if (other.gameObject.CompareTag("Spike"))
+        {
+
+            Health = 0f; 
+        
+        }
+
     }
 
     public void CyberRush()
 
     {
-        isRush = true; 
+        isRush = true;
         Health = Health + 15;
 
 
@@ -332,13 +344,13 @@ public class PlayerMovement : MonoBehaviour
 
         RushCanvas.SetActive(false);
         RushButtonCanvas.enabled = false;
-        
+
 
 
     }
 
 
-     void StopRush()
+    void StopRush()
     {
         isRush = false;
         moveSpeed = 5f;
@@ -383,6 +395,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
    
 
 
@@ -390,4 +403,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-}
+
+
+    }
