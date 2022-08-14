@@ -40,12 +40,13 @@ public class Bullet : MonoBehaviour
     
     
 
-     public void OnCollisionStay2D(Collider2D collision)
+      void OnCollisionEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             SelfDestruct();
-            return;
+            Debug.Log("Bullet is Touching Player"); 
+            
             
         }
 
@@ -65,10 +66,16 @@ public class Bullet : MonoBehaviour
         {
             SelfDestruct();
             explosion.Emit(100);
+            Debug.Log("Bullet is touching Enemy"); 
            
 
 
         }
+
+        
         
     }
+
+
+   
 }

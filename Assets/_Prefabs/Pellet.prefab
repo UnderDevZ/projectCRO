@@ -4931,7 +4931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
-  reverse: 1
+  reverse: 0
   self: {fileID: 5559565493393326715}
   explosion: {fileID: 7468347620785625412}
 --- !u!114 &-5058256671772829067

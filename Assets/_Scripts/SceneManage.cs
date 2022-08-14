@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneManage : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,4 +33,17 @@ public class SceneManage : MonoBehaviour
 
 
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+
+            NextLevel(); 
+        
+        }
+    }
+
+
+
 }

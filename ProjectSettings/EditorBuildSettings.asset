@@ -9,14 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 61fa8575383b8fa47b3bd6cbae836b51
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
+    path: Assets/Scenes/World_1/TestScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Puzzle1st.unity
     guid: 24318d282a388d84cad339cd45a025eb
   - enabled: 1
-    path: Assets/Scenes/Level1_Pt2.unity
+    path: Assets/Scenes/World_1/Level1_Pt2.unity
     guid: 3c1d9d94ab2342c42aa87039c46916bc
+  - enabled: 1
+    path: Assets/Scenes/World_1/W1_Level1_C.unity
+    guid: 6ad6e3a79b202d44191cd46ce057414f
+  - enabled: 1
+    path: Assets/Scenes/World_1/W1_Level2.unity
+    guid: cb7c0baed9209a444bf0b8719971f0ad
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2b7dea8b04ce5674fa01c5b82eea2c60
