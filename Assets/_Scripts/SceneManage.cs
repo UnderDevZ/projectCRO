@@ -17,10 +17,23 @@ public class SceneManage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "W1_Level2")
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
+
+        if(SceneManager.GetActiveScene().name == "GameOver" )
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
         
+        
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+            BGMusic.instance.GetComponent<AudioSource>().Pause();
+
+        if (SceneManager.GetActiveScene().name == "TestScene")
+            BGMusic.instance.GetComponent<AudioSource>().Play();
+
+
     }
 
-   public void MainMenu() 
+    public void MainMenu() 
     {
         SceneManager.LoadScene("MainMenu");
     
