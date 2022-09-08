@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/World_2/World2_Lvl1.unity
     guid: cc85c9a60d5c03e46ba67b0f3c5e84d3
   - enabled: 1
+    path: Assets/Scenes/World_2/World2_Lvl1_C.unity
+    guid: a9c5211d11641254fae4d00b6f856275
+  - enabled: 1
     path: Assets/Scenes/World_2/World2_Lvl2.unity
     guid: c9f047a86e2b28749aeafa1110baff90
   - enabled: 1
