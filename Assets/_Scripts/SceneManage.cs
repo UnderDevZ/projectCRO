@@ -46,6 +46,18 @@ public class SceneManage : MonoBehaviour
 
 
     }
+    public void LoadHell() 
+    {
+        SceneManager.LoadScene("Hell");
+        
+    }
+
+    public void LoadPuzzle2() 
+    {
+
+        SceneManager.LoadScene("Puzzle2");
+    
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

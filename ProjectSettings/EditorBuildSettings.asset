@@ -33,6 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/World_2/World2_Lvl2.unity
     guid: c9f047a86e2b28749aeafa1110baff90
   - enabled: 1
+    path: Assets/Scenes/World_3/Wrld3_Lvl1.unity
+    guid: 520ce3a53053bc74e9123ab94163ef56
+  - enabled: 1
+    path: Assets/Scenes/World_3/Puzzle2.unity
+    guid: 3ac043e3ed292e34493fbae2d4ec38a9
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2b7dea8b04ce5674fa01c5b82eea2c60
+  - enabled: 1
+    path: Assets/Scenes/World_3/Hell.unity
+    guid: f03618f335537e847bbc46a7ca72d79e
   m_configObjects: {}

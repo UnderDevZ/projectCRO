@@ -9,21 +9,43 @@ public class Shooter : MonoBehaviour
     public Transform shootingPoint;
     public bool ShootLeft;
     public AudioClip clip;
-    public AudioSource source; 
+  
+    public AudioSource ShootSound;
+    public bool isShot;
+
+
+    public void Update()
+    {
+
+
+        if (isShot == true) 
+        {
+
+            ShootSound.Play();
+
+
+        }
+
+       
 
 
 
-   
+
+
+    }
+
 
 
     public void Shoot() 
     {
-        
+       
         GameObject shotitem = Instantiate(bullet, shootingPoint);
         shotitem.transform.parent = null;
-
-        source.PlayOneShot(clip);
+        isShot = true;
+        Invoke("ShotRefuse", 0.01f);
        
+
+
 
         if (ShootLeft == true)
         {
@@ -41,6 +63,15 @@ public class Shooter : MonoBehaviour
        
 
         
+        
+
+
+    }
+
+    public void ShotRefuse() 
+    {
+        isShot = false; 
+
 
 
     }

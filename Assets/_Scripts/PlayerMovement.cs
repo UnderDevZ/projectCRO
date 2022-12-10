@@ -39,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
 
     public Canvas RushButtonCanvas;
     public GameObject RushCanvas;
+    public AudioSource CoinSound;
+    
+    public AudioSource JumpSound;
+    public AudioSource ShootSound;
+    public AudioSource DeathSound; 
 
 
 
@@ -62,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (CoyoteTimeCounter > 0f)
         {
-
+            JumpSound.Play();
             rb.velocity = Vector2.up * jumpForce;
             anim.Play("PlayerJump");
             CoyoteTimeCounter = 0f;
@@ -131,13 +136,13 @@ public class PlayerMovement : MonoBehaviour
         if (Health <= 0)
 
         {
-
+            
             particle.Emit(100);
             moveSpeed = 0f;
             jumpForce = 0f;
             sprite.enabled = false;
             Invoke("DeathScreen", 2);
-
+            Invoke("DeathSoundPlay",0.001f); 
 
 
 
@@ -319,6 +324,7 @@ public class PlayerMovement : MonoBehaviour
         {
             CoinCount = CoinCount + 1;
             Destroy(other.gameObject);
+            CoinSound.Play(); 
         }
 
         if (other.gameObject.CompareTag("Spike"))
@@ -394,8 +400,14 @@ public class PlayerMovement : MonoBehaviour
         sprite.enabled = true;
 
     }
+    public void DeathSoundPlay() 
+    {
 
+        DeathSound.Play();
+    
+    }
 
+   
    
 
 

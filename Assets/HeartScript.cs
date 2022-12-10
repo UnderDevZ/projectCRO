@@ -5,11 +5,15 @@ using UnityEngine;
 public class HeartScript : MonoBehaviour
 {
     public PlayerMovement playerMovement;
-    public GameObject Heart; 
+    public GameObject Heart;
+    public AudioSource HeartSound;
 
+    public SpriteRenderer HeartSprite; 
     void Start()
     {
-        
+
+        HeartSprite = GetComponent<SpriteRenderer>(); 
+
     }
 
    
@@ -19,18 +23,22 @@ public class HeartScript : MonoBehaviour
 
     {
         
-
+        
 
     }
     void OnTriggerEnter2D(Collider2D Player)
     {
         if (Player.CompareTag("Player"))
         {
+            HeartSprite.enabled = false;
+            HeartSound.Play();
 
             PlayerMovement.Health = 100f;
+            
 
-
-            Invoke("HeartEnd",0.01f);
+          
+            
+            Invoke("HeartEnd",1.5f);
 
 
         }
@@ -39,8 +47,10 @@ public class HeartScript : MonoBehaviour
     void HeartEnd() 
     
     {
-
-        Heart.SetActive(false); 
+        HeartSound.Play(); 
+        Heart.SetActive(false);
+        
+        
     }
 }
 
