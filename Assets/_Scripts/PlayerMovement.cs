@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     public static float Health = 100f;
     public float moveSpeed;
+    public  static float refSpeed;
     public Rigidbody2D rb;
     public KeyCode Left;
     public KeyCode Right;
@@ -55,8 +56,10 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
+        moveSpeed = 10f; 
         rb = GetComponent<Rigidbody2D>();
         sprite.flipX = true;
+
         bullet.reverse = false;
 
 
