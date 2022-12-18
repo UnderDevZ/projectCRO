@@ -5341,7 +5341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0141fea1dbeadce4cb80dd94138ca71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   rb: {fileID: 159177437028090748}
   Left: 97
   Right: 100
@@ -5401,8 +5401,8 @@ MonoBehaviour:
   shootingPoint: {fileID: 159177436632709782}
   ShootLeft: 0
   clip: {fileID: 8300000, guid: dc03e1d479820a04b8376f89ed86ed99, type: 3}
-  source: {fileID: 5872293137225949173}
   ShootSound: {fileID: 5872293137225949173}
+  isShot: 0
 --- !u!82 &6643491757529680446
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6022,8 +6022,8 @@ MonoBehaviour:
   shootingPoint: {fileID: 159177436632709782}
   ShootLeft: 0
   clip: {fileID: 0}
-  source: {fileID: 0}
   ShootSound: {fileID: 0}
+  isShot: 0
 --- !u!114 &159177437876967772
 MonoBehaviour:
   m_ObjectHideFlags: 0

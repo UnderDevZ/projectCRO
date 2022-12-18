@@ -120,8 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cog: {fileID: 2782059910197256683}
-  playerMovement: {fileID: 159177437028090627, guid: 9764b604798ae2a47b0945d77ee5b867,
-    type: 3}
+  playerMovement: {fileID: 0}
   cogSprite: {fileID: 2782059910197256684}
   RushSound: {fileID: 2782059910197256688}
   RushEnd: {fileID: 2782059910197256689}
