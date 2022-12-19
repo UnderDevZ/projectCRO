@@ -8,6 +8,9 @@ public class SceneManage : MonoBehaviour
 {
 
 
+    int SavedScene;
+    int SceneIndex;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +70,29 @@ public class SceneManage : MonoBehaviour
             NextLevel(); 
         
         }
+    }
+
+
+    public void LoadSavedScene() 
+    {
+        SavedScene = PlayerPrefs.GetInt("Saved");
+
+        if (SavedScene != 0)
+            SceneManager.LoadSceneAsync(SavedScene);
+        else
+            return; 
+       
+    
+    }
+
+    public void SaveScene() 
+    {
+        SceneIndex = SceneManager.GetActiveScene().buildIndex;
+        PlayerPrefs.SetInt("Saved", SceneIndex);
+        PlayerPrefs.Save();
+      
+    
+    
     }
 
 
