@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/World_3/Puzzle2.unity
     guid: 3ac043e3ed292e34493fbae2d4ec38a9
   - enabled: 1
+    path: Assets/Scenes/World_4/Wrld_4_Lvl1.unity
+    guid: 8a3d18c8b2353d942b395e7304930be6
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2b7dea8b04ce5674fa01c5b82eea2c60
   - enabled: 1
