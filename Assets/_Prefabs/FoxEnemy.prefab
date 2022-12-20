@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHealth: 3
   sprite: {fileID: 3676958551090334184}
+  FoxAnim: {fileID: 0}
 --- !u!114 &3676958551090334189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,8 +181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb39912eb658ee842ba7ee687cfff1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 159177437028090751, guid: 9764b604798ae2a47b0945d77ee5b867, type: 3}
   agroRange: 8
   moveSpeed: 8
   rb: {fileID: 3676958551090334186}
   EnemyAnim: {fileID: 3676958551090334187}
+  Enemy: {fileID: 3676958551090334196}

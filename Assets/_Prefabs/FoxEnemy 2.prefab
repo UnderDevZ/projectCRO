@@ -181,9 +181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb39912eb658ee842ba7ee687cfff1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 159177437028090751, guid: 9764b604798ae2a47b0945d77ee5b867, type: 3}
   agroRange: 8
   moveSpeed: 8
   rb: {fileID: 5621066105322516799}
   EnemyAnim: {fileID: 5621066105322516798}
-  Enemy: {fileID: 0}
+  Enemy: {fileID: 5621066105322516769}
