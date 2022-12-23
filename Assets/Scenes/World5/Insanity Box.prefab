@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 7093243855685746866}
   - component: {fileID: 7093243855685746867}
   - component: {fileID: 7093243855685746864}
+  - component: {fileID: -418062233444593661}
+  - component: {fileID: -8323111647882646413}
   m_Layer: 0
   m_Name: Insanity Box
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,3 +127,63 @@ MonoBehaviour:
   self: {fileID: 7093243855685746865}
   playerMovement: {fileID: 159177437028090627, guid: 9764b604798ae2a47b0945d77ee5b867,
     type: 3}
+--- !u!114 &-418062233444593661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7093243855685746865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a235010154658448f2115d90737554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 3
+  healthbar: {fileID: 0}
+  wallCheckDistance: -0.25
+  floorCheckDistance: 2.3
+  moveSpeed: 5
+  patrolSpeed: 5
+  jumpForce: 0
+  attackRadius: 7.2
+  stopRadius: 1.2
+  timeBetweenJumps: 0
+  minPatrolHeight: 1.9
+  maxPatrolHeight: 2.9
+  isEnemy1: 0
+  isEnemy2: 0
+  isEnemy3: 1
+  wallCheck: {fileID: 5524041360374866448, guid: 92bf0a7b99adc814faba16d4531c3764,
+    type: 3}
+  floorCheck: {fileID: 5524041360374866448, guid: 92bf0a7b99adc814faba16d4531c3764,
+    type: 3}
+  Flag: {fileID: 0}
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 22
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  OrbAnim: {fileID: 5524041361020720666, guid: 92bf0a7b99adc814faba16d4531c3764, type: 3}
+--- !u!50 &-8323111647882646413
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7093243855685746865}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

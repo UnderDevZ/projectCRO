@@ -841,6 +841,46 @@ MonoBehaviour:
   spawnPoint: {fileID: 15232901}
   projectile: {fileID: 7093243855685746865, guid: bc930b6eea7bdce449d90420f7006ce7,
     type: 3}
+  self: {fileID: 1232716150}
+--- !u!114 &1232716157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232716150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09a235010154658448f2115d90737554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 50
+  healthbar: {fileID: 0}
+  wallCheckDistance: -0.25
+  floorCheckDistance: 2.3
+  moveSpeed: 10
+  patrolSpeed: 10
+  jumpForce: 0
+  attackRadius: 7.2
+  stopRadius: 1.2
+  timeBetweenJumps: 0
+  minPatrolHeight: 1.9
+  maxPatrolHeight: 2.9
+  isEnemy1: 0
+  isEnemy2: 0
+  isEnemy3: 1
+  wallCheck: {fileID: 5524041360374866448, guid: 92bf0a7b99adc814faba16d4531c3764,
+    type: 3}
+  floorCheck: {fileID: 5524041360374866448, guid: 92bf0a7b99adc814faba16d4531c3764,
+    type: 3}
+  Flag: {fileID: 0}
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 22
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  OrbAnim: {fileID: 5524041361020720666, guid: 92bf0a7b99adc814faba16d4531c3764, type: 3}
 --- !u!1 &1233143933
 GameObject:
   m_ObjectHideFlags: 0

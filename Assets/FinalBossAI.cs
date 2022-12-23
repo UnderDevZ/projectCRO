@@ -9,6 +9,7 @@ public class FinalBossAI : MonoBehaviour
     public Slider HP;
     public Transform spawnPoint;
     public GameObject projectile;
+    public GameObject self; 
     void Start()
 
 
@@ -57,8 +58,9 @@ public class FinalBossAI : MonoBehaviour
     public void BossDeath()
     {
 
-
-        Invoke("NextScene", 5); 
+       
+        Invoke("NextScene", 5);
+        self.SetActive(false);
 
     }
 
@@ -72,3 +74,4 @@ public class FinalBossAI : MonoBehaviour
     }
 
 }
+ 
