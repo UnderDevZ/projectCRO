@@ -28,7 +28,7 @@ public class InsanityBox : MonoBehaviour
         {
             PlayerMovement.Health = (PlayerMovement.Health - 10);
             playerMovement.moveSpeed = playerMovement.moveSpeed / 2;
-            playerMovement.rb.constraints = RigidbodyConstraints2D.None;
+           
             self.SetActive(false);
             
 

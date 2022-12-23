@@ -95,6 +95,15 @@ public class SceneManage : MonoBehaviour
     
     }
 
+    public void LoadCredits() 
+    {
+        SceneManager.LoadScene("Credits"); 
+
+    
+    
+    }
+   
+
 
 
 }
