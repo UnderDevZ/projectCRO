@@ -51,6 +51,12 @@ EditorBuildSettings:
     path: Assets/Scenes/World_4/Wrld4_Lvl2.unity
     guid: 78be80d1de995404c91062063898ee2a
   - enabled: 1
+    path: Assets/Scenes/World5/Wrld5_Lvl1.unity
+    guid: cad4995f30696804dad1c7aba6f512c8
+  - enabled: 1
+    path: Assets/Scenes/World5/Wrld5Cutscene.unity
+    guid: 5ba29f7e15ef03541bd03203b26e082c
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2b7dea8b04ce5674fa01c5b82eea2c60
   - enabled: 1

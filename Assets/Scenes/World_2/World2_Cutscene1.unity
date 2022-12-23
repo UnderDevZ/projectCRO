@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d221df4541794e248b8bb58b235b7ac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CutSceneTimer: 50
 --- !u!1 &820939022
 GameObject:
   m_ObjectHideFlags: 0

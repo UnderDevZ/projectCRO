@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneEnd : MonoBehaviour
 {
-    
+   public int CutSceneTimer;
 
     
     void Update()
     {
-        Invoke("LoadAfterCutscene", 50);
+        Invoke("LoadAfterCutscene", CutSceneTimer);
     }
 
 

@@ -2639,6 +2639,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1790328352115285593, guid: 7796cd229e2d1bb47922ff97e5773dc1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7796cd229e2d1bb47922ff97e5773dc1, type: 3}
 --- !u!1001 &944552503
@@ -3859,7 +3864,7 @@ Transform:
   m_LocalScale: {x: 3.0061, y: 3.0061, z: 3.0061}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 57
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378816719
 GameObject:
@@ -4171,7 +4176,7 @@ Transform:
   m_LocalScale: {x: 3.0061, y: 3.0061, z: 3.0061}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487006125
 PrefabInstance:
@@ -5500,7 +5505,7 @@ Transform:
   m_LocalScale: {x: 3.0061, y: 3.0061, z: 3.0061}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 51
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1918000124
 PrefabInstance:
@@ -5958,7 +5963,7 @@ Transform:
   m_LocalScale: {x: 3.0061, y: 3.0061, z: 3.0061}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050188824
 GameObject:
