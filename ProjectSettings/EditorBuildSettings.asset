@@ -60,6 +60,12 @@ EditorBuildSettings:
     path: Assets/Scenes/World5/FinalBoss.unity
     guid: b1b1434799ef57941b74d1d0a1b63660
   - enabled: 1
+    path: Assets/Scenes/FinalCutscene.unity
+    guid: 9b089c82b48e1c94c88b4e6c199791bf
+  - enabled: 1
+    path: Assets/Scenes/ThanksForPlaying.unity
+    guid: b79d86bc02fc16f40a462f5626724738
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 2b7dea8b04ce5674fa01c5b82eea2c60
   - enabled: 1

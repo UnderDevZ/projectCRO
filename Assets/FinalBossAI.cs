@@ -9,7 +9,8 @@ public class FinalBossAI : MonoBehaviour
     public Slider HP;
     public Transform spawnPoint;
     public GameObject projectile;
-    public GameObject self; 
+    public GameObject self;
+    public ParticleSystem particle;
     void Start()
 
 
@@ -24,9 +25,14 @@ public class FinalBossAI : MonoBehaviour
         HP.value = health;
         if (health <= 0 ) 
         {
-            BossDeath();
+
+            BossDeath(); 
+            particle.Emit(100);
+            particle.Emit(100);
             
-        
+           
+
+
         }
     }
 
@@ -60,7 +66,8 @@ public class FinalBossAI : MonoBehaviour
 
        
         Invoke("NextScene", 5);
-        self.SetActive(false);
+        self.SetActive(false); 
+      
 
     }
 
